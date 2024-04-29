@@ -3,7 +3,7 @@ async function getWeather() {
     const longitude = document.getElementById('longitudeInput').value;
     const apiKey = 'fcaffc47f87b44d981891549242704';    
     const lang = 'en';
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}&lang=${lang}`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}&lang=${lang}`;
 
 
     try {
