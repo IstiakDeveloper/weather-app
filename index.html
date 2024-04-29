@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-400 to-purple-500 flex justify-center items-center h-screen">
+
+    <div class="weather-card px-12 max-w-md w-full text-gray-800">
+        <h1 class="text-4xl font-bold text-center mb-4">Weather App</h1>
+        <div class="mb-4">
+            <input type="text" class="border rounded py-2 px-3 focus:outline-none focus:ring focus:border-blue-500 w-full" placeholder="Latitude" id="latitudeInput">
+        </div>
+        <div class="mb-4">
+            <input type="text" class="border rounded py-2 px-3 focus:outline-none focus:ring focus:border-blue-500 w-full" placeholder="Longtitude" id="longitudeInput">
+        </div>
+        <button onclick="getWeather()" class="bg-blue-500 text-white px-4 py-2 rounded focus:outline-none w-full mb-2 hover:bg-blue-600 font-semibold text-md">Search</button>
+        <button onclick="getCurrentLocation()" class="bg-green-500 text-white px-4 py-2 rounded focus:outline-none w-full mb-2 hover:bg-green-400 font-semibold text-xmd"> <i class="fas fa-map-marker-alt"></i> Use Current Location</button>
+        <div id="weatherInfo" class="weather-info text-center mt-4 bg-gray-600">
+
+        </div>
+    </div>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
